@@ -1,9 +1,9 @@
-def czy_pierwsza(l):
-    if l < 2:
+def czy_pierwsza(n):
+    if n < 2:
         return False
     i = 2
-    while i**2 < l/2:
-        if l % i == 0:
+    while i**2 < n/2:
+        if n % i == 0:
             return False
         i += 1
     return True

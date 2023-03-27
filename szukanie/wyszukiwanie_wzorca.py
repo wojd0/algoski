@@ -18,4 +18,4 @@ def wyszukaj_wzorzec(wz, tek):
 
     return 'Brak wzorca w tekscie'
 
-print(wyszukaj_wzorzec('algorytm', 'algoytmika'))
+print(wyszukaj_wzorzec('algorytm', 'wyalgorytmika'))

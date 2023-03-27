@@ -1,9 +1,9 @@
-def na_pierwsze(l):
+def na_pierwsze(n):
     k = 2
-    while l > 1:
-        while l % k == 0:
-            l = l//k
+    while n > 1:
+        while n % k == 0:
+            n = n // k
             print(k)
         k += 1
 
-na_pierwsze(231235)
+na_pierwsze(47)

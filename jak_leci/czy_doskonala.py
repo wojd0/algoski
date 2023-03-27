@@ -1,15 +1,15 @@
-def czy_doskonala(l):
-    s, sqrt = 1, l ** 0.5
+def czy_doskonala(n):
+    s, sqrt = 1, n ** 0.5
     i = 2
     while i <= sqrt:
-        if l % i == 0:
-            s += i + l / i
+        if n % i == 0:
+            s += i + n / i
         i += 1
 
-    if l == sqrt*sqrt:
+    if n == sqrt*sqrt:
         s -= sqrt
 
-    if s == l:
+    if s == n:
         return True
     return False
 

@@ -1,9 +1,7 @@
 wynik = ''
-def zamiana (l, p):
-    global wynik
-    if l != 0:
-        zamiana(l//p, p)
-        wynik += str(l % p)
+def zamiana (n, p):
+    if n != 0:
 
-zamiana(12, 4)
-print(wynik)
+        return str(n % p) + (zamiana(n // p, p) or '')
+
+print(zamiana(20, 6))
