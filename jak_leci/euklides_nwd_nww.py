@@ -2,11 +2,11 @@
 # NWW - najmniejsza wspólna wielokrotność (namniejsza liczba, która dzieli sie przez obydwie podane)
 
 def euklides_iter(a,b):
-    while a!=b:
-        if a > b:
-            a -= b
-        else:
-            b -= a
+    pom = 0
+    while (b != 0):
+        pom = b
+        b = a % b
+        a = pom
 
     return(a)
 
